@@ -17,16 +17,16 @@ Things you may want to cover:
 
 ## Entities
 
-- Person
+- Visitor
   - first_name
   - last_name
   - email
-  - type
-- Visitor < Person
   - phone
   - company
-  - nda_status
-- Host < Person
+- Host
+  - first_name
+  - last_name
+  - email
 - Visit
   - check_in
   - check_out

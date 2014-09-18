@@ -17,4 +17,5 @@ end
 
 group :development do
   gem 'spring'
+  gem 'annotate'
 end
