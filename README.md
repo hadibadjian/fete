@@ -18,15 +18,22 @@ Things you may want to cover:
 ## Entities
 
 - Visitor
-  - first_name
-  - last_name
-  - email
-  - phone
-  - company
+  - (*) first_name
+  - (*) last_name
+  - (*) email
+  -     phone
+  -     company
 - Host
-  - first_name
-  - last_name
-  - email
+  - (*) first_name
+  - (*) last_name
+  - (*) email
 - Visit
-  - check_in
-  - check_out
+  -     check_in
+  -     check_out
+
+## API
+
+- /visitors
+  [{"first_name":"x","last_name":"x","email":"x@x.com"}]
+- /hosts
+  [{"first_name":"x","last_name":"x","email":"x@outware.com.au"}]

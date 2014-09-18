@@ -12,7 +12,11 @@
 #
 
 class Host < ActiveRecord::Base
-
+  validates :first_name,  presence: true
+  validates :last_name,   presence: true
+  validates :email,       presence: true,
+                          email: true
+                          
   def as_json(options)
     super only: [:first_name, :last_name, :email]
   end
