@@ -30,4 +30,3 @@ Things you may want to cover:
 - Visit
   - check_in
   - check_out
-  - (host)
