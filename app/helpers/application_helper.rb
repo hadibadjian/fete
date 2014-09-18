@@ -1,2 +1,19 @@
 module ApplicationHelper
+  def current_user
+    user = nil
+    
+    if !!session[:user_id]
+      begin
+        user = User.find(session[:user_id])
+      rescue ActiveRecord::RecordNotFound => e
+        session[:user_id] = nil
+      end
+    end
+
+    user
+  end
+
+  def logged_in?
+    !!current_user
+  end
 end

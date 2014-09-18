@@ -10,6 +10,9 @@ gem 'turbolinks'
 gem 'jbuilder',           '~> 2.0'
 gem 'email_validator',    require: 'email_validator/strict'
 gem 'bootstrap-sass'
+gem 'signet-rails'
+gem 'google-api-client',  require: 'google/api_client'
+
 
 group :doc do
   gem 'sdoc',             '~> 0.4.0'
